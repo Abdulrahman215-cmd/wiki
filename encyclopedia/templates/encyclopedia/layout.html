@@ -11,46 +11,27 @@
     <body>
         <div class="row">
             <div class="sidebar col-lg-2 col-md-3">
-<<<<<<< HEAD
                 <h2>Wiki</h2>
                 <form action="{% url 'search' %}" method="post">
                     <input name="query" class="search" value="{{ form.query }}" placeholder="Search Encyclopedia">
                     {% csrf_token %}
-=======
-                </form>
-                <h2>Wiki</h2>
-                <form action="{% url 'search' %}" method="get">
-                    <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
-                    <button type="submit">Search</button>
->>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
                 </form>
                 <div>
                     <a href="{% url 'index' %}">Home</a>
                 </div>
                 <div>
-<<<<<<< HEAD
                     <a href="{% url 'create' %}">Create New Page</a>
-=======
-                    <a href="{% url 'create_page' %}">Create New Page</a>
->>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
                 </div>
                 <div>
                     <a href="{% url 'random' %}">Random Page</a>
                 </div>
-<<<<<<< HEAD
                 {% block nav %}
                 {% endblock %}
-=======
->>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
             </div>
             <div class="main col-lg-10 col-md-9">
                 {% block body %}
                 {% endblock %}
             </div>
         </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
     </body>
 </html>

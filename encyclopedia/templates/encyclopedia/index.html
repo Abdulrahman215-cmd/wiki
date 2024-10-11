@@ -1,16 +1,11 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %}
-<<<<<<< HEAD
     Encyclopedia
-=======
-    Index
->>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
 {% endblock %}
 
 {% block body %}
     <h1>All Pages</h1>
-<<<<<<< HEAD
 
     <ul>
         {% for entry in entries %} 
@@ -18,11 +13,4 @@
         {% endfor %}
     </ul>
 
-=======
-    <ul>
-        {% for entry in entries %}
-            <li><a href="{% url 'entry' entry %}">{{ entry }}</a></li>
-        {% endfor %}
-    </ul>
->>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
 {% endblock %}

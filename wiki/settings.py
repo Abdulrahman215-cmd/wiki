@@ -55,11 +55,7 @@ ROOT_URLCONF = 'wiki.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
         'DIRS': [],
-=======
-        'DIRS': [os.path.join(BASE_DIR, 'encyclopedia', 'templates'),],
->>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
