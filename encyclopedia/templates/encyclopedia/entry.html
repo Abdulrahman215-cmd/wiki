@@ -1,6 +1,28 @@
 {% extends "encyclopedia/layout.html" %}
 
+<<<<<<< HEAD
 {% block body %}
    {{ single_entry|safe }}
     <div><a href="{% url 'edit' title=title %}">Edit Page</a></div>
+=======
+{% block title %}
+   entry
+{% endblock %}
+
+{% block body %}
+<div>
+  {{ content|safe }}
+</div>
+    {%for index in entries%}
+      <p>{{index}}</p>
+    {%endfor%}
+    {% if message %}
+    <div class="error">{{ message }}</div>
+    {% endif %}
+      <a href="{% url 'edit' title=entry_title %}">Edit</a>
+      <form action="{% url 'delete' entry_name=entry_title %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+      </form>
+>>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
 {% endblock %}

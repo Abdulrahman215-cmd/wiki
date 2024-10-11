@@ -12,6 +12,14 @@ h1 {
     padding-top: 20px;
 }
 
+<<<<<<< HEAD
+=======
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+>>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
 .main {
     padding: 10px;
 }
@@ -30,4 +38,16 @@ h1 {
 
 .sidebar h2 {
     margin-top: 5px;
+<<<<<<< HEAD
 }
+=======
+}
+
+.suggestions {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+>>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe

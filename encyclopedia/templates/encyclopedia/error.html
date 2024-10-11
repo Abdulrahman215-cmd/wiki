@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %}
@@ -7,3 +8,19 @@
 <h1 style="color: rgb(244, 11, 11);">ERROR</h1>
    <h5>{{ message }}</h5>
 {% endblock %}
+=======
+    {% extends "encyclopedia/layout.html" %}
+
+    {% block title %}
+        Error
+    {% endblock %}
+    
+    {% block body %}
+        <h1 style="color: #e32716;">Error</h1>
+        {% if message %}
+        <div class="error">{{ message }}</div>
+        {% endif %}
+    {% endblock %}
+
+
+>>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
