@@ -1,7 +1,6 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %}
-<<<<<<< HEAD
    Edit
 {% endblock %}
 
@@ -13,15 +12,4 @@
    <br>
    <button type="submit">Save Edit</button>
 </form>
-=======
-   edit
-{% endblock %}
-{% block body %}
-  <h1>EDIT {{ title }}</h1>
-  <form action="{% url 'edit' title=title %}" method="post">
-    {% csrf_token %}
-    <textarea name="content">{{ content }}</textarea>
-    <button type="submit">Save</button>
-  </form>
->>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
 {% endblock %}
