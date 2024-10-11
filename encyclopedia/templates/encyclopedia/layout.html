@@ -12,18 +12,27 @@
         <div class="row">
             <div class="sidebar col-lg-2 col-md-3">
                 <h2>Wiki</h2>
+<<<<<<< HEAD
                 <form action="{% url 'search' %}" method="post">
                     <input name="query" class="search" value="{{ form.query }}" placeholder="Search Encyclopedia">
                     {% csrf_token %}
+=======
+                <form>
+                    <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
+>>>>>>> b5b5b7483d00feb76a557f77b948d8c2460e26a9
                 </form>
                 <div>
                     <a href="{% url 'index' %}">Home</a>
                 </div>
                 <div>
+<<<<<<< HEAD
                     <a href="{% url 'create' %}">Create New Page</a>
+=======
+                    Create New Page
+>>>>>>> b5b5b7483d00feb76a557f77b948d8c2460e26a9
                 </div>
                 <div>
-                    <a href="{% url 'random' %}">Random Page</a>
+                    Random Page
                 </div>
                 {% block nav %}
                 {% endblock %}
@@ -33,5 +42,9 @@
                 {% endblock %}
             </div>
         </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> b5b5b7483d00feb76a557f77b948d8c2460e26a9
     </body>
 </html>
