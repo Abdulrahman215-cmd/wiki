@@ -1,6 +1,5 @@
 {% extends "encyclopedia/layout.html" %}
 
-<<<<<<< HEAD
 {% block body %}
 {% if partial_matches %}
         <h3>What You Have Searched For Doesn't Exist, Did You Mean Any Of The Following?</h3>
@@ -10,21 +9,4 @@
     {% endfor %}
     </ul>
 {% endif %}
-=======
-{% block title %}
-    Search Results
-{% endblock %}
-
-{% block body %}
-    {% if results %}
-        <h3>Did You Mean Any Of The Following?</h3>
-        <ul>
-            {% for result in results %}
-                <li><a href="{% url 'entry' title=result %}">{{ result }}</a></li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <h4>No results found for "{{ query }}"</h4>
-    {% endif %}
->>>>>>> 7dd0e5fce470c98764fecb4223a73821664844fe
 {% endblock %}
